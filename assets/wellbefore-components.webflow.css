@@ -631,6 +631,8 @@ a {
     -ms-flex-align: center;
     align-items: center;
     height: fit-content;
+    margin-left: 20rem;
+    margin-bottom: 5rem;
 }
 
 .div-block-2 {

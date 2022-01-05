@@ -1,8 +1,6 @@
 .carousel {
-    background: hsl(0, 0%, 98%);
     height: 500px;
-    margin-top: 25px;
-    margin-bottom: 25px;
+    margin-top: 5rem;
 }
 
 .carousel-cell {
