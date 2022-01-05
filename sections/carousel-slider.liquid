@@ -1,5 +1,7 @@
 <p>{{collection.products_count}} products</p>
-
+{% for product in collection.products %}
+{{ product.title }}
+{% endfor %}
 
 {% schema %}
 {
