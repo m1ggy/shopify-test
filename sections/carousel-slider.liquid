@@ -9,7 +9,7 @@
         <div class="image-div">
             <div class="product-image">
                 {% for image in product.images %}
-                <img src="{{ image.src | product_img_url: 'medium' }}" loading="lazy" alt="" />
+                <img src="{{ image.src | product_img_url: 'small' }}" loading="lazy" alt="" />
                 {% endfor %}
             </div>
             <div class="tagtext">In stock</div>

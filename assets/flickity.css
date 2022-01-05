@@ -6,10 +6,7 @@
 .carousel-cell {
     width: fit-content;
     margin-top: 5rem;
-    height: auto;
-}
-
-/* cell number */
-.carousel-cell:before {
-    display: block;
+    height: 450px;
+    min-width: 250px;
+    margin: 10px;
 }
