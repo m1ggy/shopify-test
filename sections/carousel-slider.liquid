@@ -12,7 +12,10 @@
                 <img src="{{ image.src | product_img_url: 'small' }}" loading="lazy" alt="" />
                 {% endfor %}
             </div>
-            <div class="tagtext">In stock</div>
+
+            {% for tag in product.tags %}
+            <div class="tagtext">{{ tag }}</div>
+            {% endfor %}
             <div class="soldout-text">SOLD OUT AVAILABLE SOON</div>
         </div>
         <div class="product-name-div">
@@ -57,7 +60,13 @@
             <div class="text-block-2">
                 From <span class="text-red">$1.59ea.</span><br />
             </div>
-            <a href="#" class="button w-button">Notify Me</a>
+            <a href="#" class="button w-button">
+                {% if product.available == true %}
+                Choose options
+                {% else %}
+                Notify Me
+                {% endif %}
+            </a>
         </div>
     </div>
     {% endfor %}
