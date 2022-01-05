@@ -322,6 +322,20 @@ a {
     font-weight: 300;
 }
 
+.in-stock-text {
+    position: absolute;
+    left: 0%;
+    top: auto;
+    right: auto;
+    bottom: 0%;
+    padding: 3px 5px;
+    border-radius: 5px;
+    background-color: #4fbb4f;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 300;
+}
+
 .header {
     display: -webkit-box;
     display: -webkit-flex;
@@ -616,6 +630,7 @@ a {
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
+    height: fit-content;
 }
 
 .div-block-2 {

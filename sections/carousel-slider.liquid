@@ -3,6 +3,10 @@
 {{ 'flickity.css' | asset_url | stylesheet_tag }}
 
 <!-- Flickity HTML init -->
+<div class="div-block-3">
+    <h2 class="section__header">{{ section.settings.header }}</h2>
+</div>
+
 <div class="carousel" data-flickity='{ "pageDots": false }'>
     {% for product in collection.products %}
     <div class="productdiv carousel-cell">
@@ -16,7 +20,12 @@
             {% for tag in product.tags %}
             <div class="tagtext">{{ tag }}</div>
             {% endfor %}
+            {% if product.available == false%}
             <div class="soldout-text">SOLD OUT AVAILABLE SOON</div>
+            {% else %}
+            <div class="in-stock-text">AVAILABLE</div>
+
+            {% endif %}
         </div>
         <div class="product-name-div">
             <h4>{{ product.title }}</h4>
@@ -58,9 +67,9 @@
                 &amp; save
             </div>
             <div class="text-block-2">
-                From <span class="text-red">$1.59ea.</span><br />
+                From <span class="text-red">{{ product.price | money_with_currency }}</span><br />
             </div>
-            <a href="#" class="button w-button">
+            <a href='{{product.url}}' class="button w-button">
                 {% if product.available == true %}
                 Choose options
                 {% else %}
@@ -74,7 +83,13 @@
 
 {% schema %} {
 "name": "carousel-slider",
-"settings": [],
+"settings": [
+{
+"type":"text",
+"id":"header",
+"default":"Our Best Products 💖",
+"label":"carousel-header"
+}],
 "presets": [{
 "name": "carousel-slider",
 "category": "Custom"
