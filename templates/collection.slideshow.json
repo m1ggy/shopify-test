@@ -51,9 +51,82 @@
         "show_text_below": true
       }
     },
+    "1641419308df53296e": {
+      "type": "multicolumn",
+      "blocks": {
+        "1641419308eeebb3ac-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/rocket_1f680_60x_d0f13ee3-f80f-4732-a418-02c702daedae.png",
+            "title": "Fast Shipping",
+            "text": "<p>We'll ship your order in 48 business hours or less.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "1641419308eeebb3ac-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/smiling-face-with-heart-shaped-eyes_1f60d_60x_a8c73bb7-27f3-411f-bab9-2293d76f3ef0.png",
+            "title": "Happy Customers",
+            "text": "<p>We have over 320,000+ Satisfied Customers!<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "1641419308eeebb3ac-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/heavy-black-heart-compressed_60x_cedcb93e-c764-4431-81b2-5d8b2588fad7.png",
+            "title": "Donation program",
+            "text": "<p>We have donated over 1,216,147+ medical supplies to those in need.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "e826ffed-aa31-4b5a-a70f-a390d52d30a7": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/sports-medal_1f3c5_60x_e8dd0fd6-ab9a-4217-ac71-292902434f9b.png",
+            "title": "Top Quality Products",
+            "text": "<p>Our 23,100+ product<a href=\"\/collections\/all\" title=\"All products\"> reviews <\/a>speak for themselves.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "31ec20ee-e724-42ae-9b20-74bcae69e8c1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/trophy_1f3c6_60x_d8f42274-177b-49b6-bf39-f085752f6444.png",
+            "title": "Honest Customer Service",
+            "text": "<p>We are here to help 24\/7.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1641419308eeebb3ac-0",
+        "1641419308eeebb3ac-1",
+        "1641419308eeebb3ac-2",
+        "e826ffed-aa31-4b5a-a70f-a390d52d30a7",
+        "31ec20ee-e724-42ae-9b20-74bcae69e8c1"
+      ],
+      "settings": {
+        "title": "",
+        "image_width": "third",
+        "image_ratio": "adapt",
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "Button label",
+        "button_link": "",
+        "swipe_on_mobile": false
+      }
+    },
     "main": {
       "type": "carousel-slider",
       "settings": {
+        "header": "Our Best Products 💖"
       }
     },
     "164141537270510a0f": {
@@ -95,6 +168,7 @@
   },
   "order": [
     "16414149790a02b088",
+    "1641419308df53296e",
     "main",
     "164141537270510a0f"
   ]
