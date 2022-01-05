@@ -1,0 +1,12 @@
+{
+  "sections": {
+    "main": {
+      "type": "carousel-slider",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}
