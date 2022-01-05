@@ -3,7 +3,7 @@
 {{ 'flickity.css' | asset_url | stylesheet_tag }}
 
 <!-- Flickity HTML init -->
-<div class="carousel" data-flickity>
+<div class="carousel" data-flickity='{ "pageDots": false }'>
     {% for product in collection.products %}
     <div class="productdiv carousel-cell">
         <div class="image-div">
