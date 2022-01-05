@@ -132,6 +132,7 @@
     },
     "164141537270510a0f": {
       "type": "collection-list",
+      "disabled": true,
       "blocks": {
         "164141537247ad1572-0": {
           "type": "featured_collection",
