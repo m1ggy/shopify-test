@@ -4,7 +4,17 @@
 {% endfor %}
 
 {{'webflow.css' | asset_url | stylesheet_tag}}
-<div class="productdiv">
+{{'flickity.css' | asset_url | stylesheet_tag}}
+<!-- Flickity HTML init -->
+<div class="carousel" data-flickity>
+    <div class="carousel-cell"></div>
+    <div class="carousel-cell"></div>
+    <div class="carousel-cell"></div>
+    <div class="carousel-cell"></div>
+    <div class="carousel-cell"></div>
+</div>
+
+<!-- <div class="productdiv">
     <div class="image-div">
         <div class="product-image"><img src="images/Flowflex-COVID-19-Antigen-Home-Test.jpg" loading="lazy" alt="">
         </div>
@@ -46,7 +56,7 @@
         <div class="text-block-2">From <span class="text-red">$1.59ea.</span><br></div>
         <a href="#" class="button w-button">Notify Me</a>
     </div>
-</div>
+</div> -->
 
 {% schema %}
 {
