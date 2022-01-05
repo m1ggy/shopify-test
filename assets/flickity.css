@@ -1,30 +1,15 @@
-* {
-    box-sizing: border-box;
-}
-
-body {
-    font-family: sans-serif;
-}
-
 .carousel {
     background: #fafafa;
+    height: 500px;
 }
 
 .carousel-cell {
-    width: 66%;
-    height: 200px;
-    margin-right: 10px;
-    background: #8c8;
-    border-radius: 5px;
-    counter-increment: carousel-cell;
+    width: fit-content;
+    margin-top: 5rem;
+    height: auto;
 }
 
 /* cell number */
 .carousel-cell:before {
     display: block;
-    text-align: center;
-    content: counter(carousel-cell);
-    line-height: 200px;
-    font-size: 80px;
-    color: white;
 }

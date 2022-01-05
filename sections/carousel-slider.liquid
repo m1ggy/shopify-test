@@ -1,35 +1,43 @@
-{{'webflow.css' | asset_url | stylesheet_tag}}
-{{'flickity.css' | asset_url | stylesheet_tag}}
+{{ 'webflow.css' | asset_url | stylesheet_tag }}
+{{ 'wellbefore-components.webflow.css' | asset_url | stylesheet_tag }}
+{{ 'flickity.css' | asset_url | stylesheet_tag }}
 
 <!-- Flickity HTML init -->
 <div class="carousel" data-flickity>
     {% for product in collection.products %}
     <div class="productdiv carousel-cell">
         <div class="image-div">
-            <div class="product-image"><img src="images/Flowflex-COVID-19-Antigen-Home-Test.jpg" loading="lazy" alt="">
+            <div class="product-image">
+                {% for image in product.images %}
+                <img src="{{ image.src | product_img_url: 'medium' }}" loading="lazy" alt="" />
+                {% endfor %}
             </div>
-            <div class="tagtext">{{product.title}}</div>
+            <div class="tagtext">In stock</div>
             <div class="soldout-text">SOLD OUT AVAILABLE SOON</div>
         </div>
         <div class="product-name-div">
-            <h4>Flowflex COVID-19 Antigen Home Test</h4>
+            <h4>{{ product.title }}</h4>
         </div>
         <div class="w-form">
             <form id="email-form" name="email-form" data-name="Email Form" method="get">
                 <div>Available Colors:</div>
-                <div class="div-block-4"><label class="radio-button-field w-radio">
+                <div class="div-block-4">
+                    <label class="radio-button-field w-radio">
                         <div
                             class="w-form-formradioinput w-form-formradioinput--inputType-custom radio-button w-radio-input">
-                        </div><input type="radio" data-name="Radio" id="radio" name="radio" value="Radio"
-                            style="opacity:0;position:absolute;z-index:-1"><span class="radio-button-label w-form-label"
-                            for="radio">Radio</span>
+                        </div>
+                        <input type="radio" data-name="Radio" id="radio" name="radio" value="Radio"
+                            style="opacity: 0; position: absolute; z-index: -1" /><span
+                            class="radio-button-label w-form-label" for="radio">Radio</span>
                     </label><label class="w-radio">
                         <div
                             class="w-form-formradioinput w-form-formradioinput--inputType-custom radio-button black w-radio-input">
-                        </div><input type="radio" data-name="Radio 2" id="radio-2" name="radio" value="Radio"
-                            style="opacity:0;position:absolute;z-index:-1"><span class="radio-button-label w-form-label"
-                            for="radio-2">Radio</span>
-                    </label></div>
+                        </div>
+                        <input type="radio" data-name="Radio 2" id="radio-2" name="radio" value="Radio"
+                            style="opacity: 0; position: absolute; z-index: -1" /><span
+                            class="radio-button-label w-form-label" for="radio-2">Radio</span>
+                    </label>
+                </div>
             </form>
             <div class="w-form-done">
                 <div>Thank you! Your submission has been received!</div>
@@ -42,22 +50,18 @@
             <div class="text-block"><strong>1055</strong> Verified Reviews</div>
         </div>
         <div class="div-block-6">
-            <div class="text-block-2">From <span class="text-blue">$1.59ea.</span><br>with subscribe &amp; save</div>
-            <div class="text-block-2">From <span class="text-red">$1.59ea.</span><br></div>
+            <div class="text-block-2">
+                From <span class="text-blue">$1.59ea.</span><br />with subscribe
+                &amp; save
+            </div>
+            <div class="text-block-2">
+                From <span class="text-red">$1.59ea.</span><br />
+            </div>
             <a href="#" class="button w-button">Notify Me</a>
         </div>
     </div>
     {% endfor %}
-
-
-
 </div>
 
-
-
-{% schema %}
-{
-"name":"carousel-slider",
-"settings":[]
-}
-{% endschema %}
+{% schema %} { "name":"carousel-slider", "settings":[], "presets":[
+"name":"carousel-slider", "category":"Custom" ] } {% endschema %}
