@@ -96,6 +96,7 @@
         },
         "31ec20ee-e724-42ae-9b20-74bcae69e8c1": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/trophy_1f3c6_60x_d8f42274-177b-49b6-bf39-f085752f6444.png",
             "title": "Honest Customer Service",
@@ -116,8 +117,8 @@
         "title": "",
         "image_width": "third",
         "image_ratio": "square",
-        "column_alignment": "left",
-        "background_style": "secondary",
+        "column_alignment": "center",
+        "background_style": "none",
         "button_label": "",
         "button_link": "",
         "swipe_on_mobile": false
