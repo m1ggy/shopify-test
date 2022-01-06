@@ -1,0 +1,59 @@
+{{'normalize.css'| asset_url | stylesheet_tag}}
+{{ 'webflow.css' | asset_url | stylesheet_tag }}
+{{ 'wellbefore-components.webflow.css' | asset_url | stylesheet_tag }}
+
+<div class="container">
+    <div class="nav-bar__inner">
+        <nav role="navigation" class="list-menu w-nav-menu">
+            <div data-hover="false" data-delay="0" class="header__menu-item w-dropdown">
+                <div class="w-dropdown-toggle">
+                    <div class="icon w-icon-dropdown-toggle"></div>
+                    <div class="text-block-3">Masks</div>
+                </div>
+                <nav class="header__submenu w-dropdown-list">
+                    <a href="#" class="list-menu__item w-dropdown-link">KN95</a>
+                    <a href="#" class="list-menu__item w-dropdown-link">N95</a>
+                    <a href="#" class="list-menu__item w-dropdown-link">Kids</a>
+                    <a href="#" class="list-menu__item w-dropdown-link">3 Ply</a>
+                </nav>
+            </div>
+            <div data-hover="false" data-delay="0" class="header__menu-item w-dropdown">
+                <div class="w-dropdown-toggle">
+                    <div class="icon w-icon-dropdown-toggle"></div>
+                    <div class="text-block-3">Other PPE</div>
+                </div>
+                <nav class="header__submenu w-dropdown-list">
+                    <a href="#" class="list-menu__item w-dropdown-link">Face Shields</a>
+                    <a href="#" class="list-menu__item w-dropdown-link">Gloves</a>
+                    <a href="#" class="list-menu__item w-dropdown-link">Gowns</a>
+                </nav>
+            </div>
+            <a href="#" class="list-menu__item w-nav-link">COVID-19 Test Kits</a>
+            <div data-hover="false" data-delay="0" class="header__menu-item w-dropdown">
+                <div class="w-dropdown-toggle">
+                    <div class="icon w-icon-dropdown-toggle"></div>
+                    <div class="text-block-3">Cleaning</div>
+                </div>
+                <nav class="header__submenu w-dropdown-list">
+                    <a href="#" class="list-menu__item w-dropdown-link">Cleaners and Disinfectants</a>
+                </nav>
+            </div>
+        </nav>
+        <div class="w-nav-button">
+            <div class="w-icon-nav-menu"></div>
+        </div>
+    </div>
+</div>
+
+
+{% schema %}{
+"name": "nav-collections",
+"settings": [],
+"presets": []
+}
+{% endschema %}
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
